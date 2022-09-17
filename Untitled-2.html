@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+              background-image: linear-gradient(grey, white);
+            }
+             input[type=text] {    
+                        border-radius: 5px 5px 5px 5px;
+                        background-image: linear-gradient(rgba(112, 214, 214, 0.849), white) ;
+                        color: black;
+                        height:25px;
+                        width:20%;
+                    
+                        
+                    }
+            input[type=postal] {
+                        border-radius: 5px 5px 5px 5px;
+                        background-image: linear-gradient(rgba(112, 214, 214, 0.849), white) ;
+                        color: black;
+                        height:25px;
+                        width:10%;
+                        
+                    }
+            input[type=password] {
+                        border-radius: 5px 5px 5px 5px;
+                        background-image: linear-gradient(rgba(112, 214, 214, 0.849), white) ;
+                        color: black;
+                        height:25px;
+                        width:15%;
+                        
+                    } 
+            input[type=email] {
+                        
+                        border-radius: 5px 5px 5px 5px;
+                        background-image: linear-gradient(rgba(112, 214, 214, 0.849), white) ;
+                        color: black;
+                        height:25px;
+                        width:25%;
+            
+                        
+                    } 
+            input[type=tel] {
+                        border-radius: 5px 5px 5px 5px;
+                        background-image: linear-gradient(rgba(112, 214, 214, 0.849), white) ;
+                        color: black;
+                        height:25px;
+                        width:20%;
+                    text-align:left;
+                    }      
+            #campus{
+                 border-radius: 5px 5px 5px 5px;
+            border: 1.5px solid black;
+            background-image: linear-gradient(grey, white);
+                        height:28px;
+                        width:10%;
+                          
+            color:black;
+              top: 100%;
+              left: 0;
+              right: 0;
+              z-index: 99;
+            }
+            
+            middle{
+                text-align:right;
+            }
+            
+            #one{
+                background-image: linear-gradient(white, rgba(43, 222, 43, 0.811));
+                border-radius: 200px;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            <script src="validation.js"></script>
+            </head>
+    <body>
+        </style>
+        <div class="top" style="text-align:center">
+
+            <h1 style="font-size:60px;
+            font-size: 72px;
+              background: -webkit-linear-gradient(#f6ea41, #f048c6);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            margin-top:10px;
+            border-width: 6px;
+            border-style: solid;
+            border-image: linear-gradient(to right, white, grey)1;
+            font-family:Agency FB">
+            
+            <img src="https://www.freelogovectors.net/svg04/vitlogo.svg" width="5%" height="2%">&nbsp;VIT Event Registration Form</h1>
+            </div>
+            <div class = "middle" style= "font-family:Candara Light">
+               
+               
+                <form name="myForm" action="submit.html" onsubmit="return validateForm()" method="post">
+  <label for="fname" style="font-size: 20px"><b>First name:</b><span style="margin-left:7px;"</span></span></label>
+  <input type="text" id="name" name="fname" placeholder="First Name" >
+
+  <label for="lname" style="font-size: 20px"><b>Last name:</b><span style="margin-left:4px;"</span></span></label>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+
+  <label for="email" style="font-size: 20px"><b>Email:</b><span style="margin-left:47px;"></span></label>
+  <input type="email" id="email" name="mail"  placeholder="Enter VIT Mail ID"><br><br>
+
+   <label for="pass" style="font-size: 20px"><b>Password:</b><span style="margin-left:12px;"</span></span></label>
+  <input type="text" id="password" name="pass"><br><br>
+
+   <label for="city" style="font-size: 20px"><b>City:</b><span style="margin-left:65px;"</span></span></label>
+  <input type="text" id="city" name="city" placeholder="City">&nbsp&nbsp&nbsp&nbsp&nbsp
+
+   <label for="zip" style="font-size: 20px"><b>Zip Code:</b><span style="margin-left:4px;"</span></span></label>
+  <input type="number" id="zip" name="zip" placeholder="ZIP code"><br><br>
+
+  <label for="mob" style="font-size: 20px"><b>Mobile no:</b><span style="margin-left:12px;"</span></span></label>
+  <input type="number" id="mobile" name="mob" placeholder="Mobile Number"><br><br>
+
+<label for="campus" style="font-size: 20px"><b>Campus:</b><span style="margin-left:30px;"</span></span></label>
+<select id="campus" name="campus">
+  <option value="select city">-Select Campus-</option>
+  <option value="Vellore">Vellore</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Amaravati">Amaravati</option>
+  <option value="Bhopal">Bhopal</option>
+</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<label for="eve" style="font-size: 20px"><b>Event registering:</label</b><span style="margin-left:15px;"</span></span></label>
+  <input type="text" id="eve" name="eve"><br><br>
+
+<div class=div style = "position:relative; left:580px;">
+    <input type="submit"  id="one"><br><br><br><br>
+</form>
+    </div>
+</div>
+
+    </body>
+</html>
